@@ -1,0 +1,35 @@
+.container{
+ width :100%;
+ height: 100%;
+ border: 20px;
+}
+
+/* Style the header */
+header {
+  background-color: PeachPuff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav{
+	float: left;
+	max-width: 200px;
+	padding: 40px;
+}
+
+article{
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-bottom: 50px;
+	
+	background-color:Ivory;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: PeachPuff;
+  padding: 10px;
+  text-align: center;
+}

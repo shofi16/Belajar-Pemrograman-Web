@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tittle> Latihan form</tittle>
+</head>
+
+<body>
+	<h2><center>FORM PENDATAAN MAHASISWA</center></h2>
+	<form action="form.php" method="post">
+		<table>
+			<tr>
+				<td>Jurusan</td>
+				<td><input type="text" name="jurusan"/><br/></td>
+			</tr>
+			<tr>
+				<td>Program Studi</td>
+				<td><input type="text" name="prodi"/><br/></td>
+			</tr>
+			 <tr>
+				<td>Kode Mahasiswa* </td>
+				<td><input type="text" name="kodemhs" required/><br/></td>
+			</tr>
+			<tr>
+				<td>Nama Mahasiswa*</td>
+				<td><input type="text" name="namamhs" required /><br/></td>
+			</tr>
+			<tr>
+				<td>NIK Mahasiswa (No KTP)* </td>
+				<td><input type="text" name="nikmhs" required/><br/></td>
+			</tr>
+			<tr>
+				<td>No BPJS</td>
+				<td><input type="text" name="nobpjs" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td>Tahun Angkatan*</td>
+				<td><input type="text" name="thn_angkatan" required/></td>
+			</tr>
+			<tr>
+				<td>Semester Masuk*</td>
+				<td><select name="smstr_masuk" required>
+							<option value=" ">  </option>
+							<option value="Semester 1"> 1</option>
+							<option value="Semester 2">2</option>
+							<option value="Semester 3">3</option>
+							<option value="Semester 4">4</option>
+							<option value="Semester 5">5</option>
+							<option value="Semester 6">6</option>
+							<option value="Semester 7">7</option>
+							</select></td>
+			</tr>
+			<tr>
+				<td>Dosen Pembimbing Akademik </td>
+				<td><input type="text" name="dosenbim"/></td>
+			</tr>
+			<tr>
+				<td>No Telp Orangtua/Wali </td>
+				<td><input type="text" name="no_ortu"/></td>
+			</tr>
+			<tr>
+				<td>No HP Mahasiswa </td>
+				<td><input type="text" name="no_mhs"/></td>
+			</tr>
+			<tr>
+				<td>Email Aktif Mahasiswa  </td>
+				<td><input type="email" name="email"/></td>
+			</tr>
+			<tr>
+				<td>Tempat Tinggal Saat Kuliah</td>
+				<td><select name="tmpt_tinggal" >
+					<option value="-Pilih Jenis Tinggal-"> -Pilih Jenis Tinggal-</option>
+					<option value="bersama orangtua"> Bersama Orangtua</option>
+					<option value="bersama Wali"> Bersama Wali</option>
+					<option value="asrama"> Asrama</option>
+					<option value="kost"> Kost</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td><input type="radio" name="jk" value="laki-laki"/> Laki-Laki
+					<input type="radio" name="jk" value= "perempuan"/> Perempuan</td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td><select name="agama" >
+				  <option value=" ">  </option>
+				  <option value="Agama islam"> Islam</option>
+				  <option value="Agama Kristen"> Kristen</option>
+				  <option value="Agama katholik"> Katholik</option>
+				  <option value="Agama hindu"> Hindu</option>
+				  <option value="Agama budha"> Budha</option>
+				  <option value="Agama konghuchu"> Konghuchu</option>
+				  </select></td>
+			</tr>
+			<tr>
+				<td>Status Marital</td>
+				<td><select name="sts_marital" >
+					<option value=" "> </option>
+					<option value="single"> Single</option>
+					<option value="Married"> Married</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Nama Gadis Ibu Kandung</td>
+				<td> <input type="text" name="nm_ibu"/></td>
+			</tr>
+			<tr>
+				<td>Nama Ayah Kandung  </td>
+				<td><input type="text" name="nm_ayah"/></td>
+			</tr>
+			<tr>
+				<td>Tempat Lahir  </td>
+				<td><input type="text" name="tmpt_lhr"/></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir </td>
+				<td><input type="date" name="ttl"/></td>
+			</tr>
+			<tr>
+				<td>Kewarganegaraan</td>
+				<td><select name="warga" >
+					<option value=" "> </option>
+					<option value="wni"> WNI</option>
+					<option value="wna"> WNA</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Alamat Asal</td>
+				<td><input type="text" name="almt_asal"/></td>
+			</tr>
+			<tr>
+				<td>RT/RW Asal</td>
+				<td> <input type="text" name="rt"> /  <input type="text" name="rw" /></td>
+			</tr>
+			<tr>
+				<td>Desa/Kelurahan Asal </td>
+				<td><input type="text" name="ds_asal"/></td>
+			</tr>
+			<tr>
+				<td>Kecamatan Asal </td>
+				<td><input type="text" name="kcmtn_asal"/></td>
+			</tr>
+			<tr>
+				<td>Kota Asal </td>
+				<td><input type="text" name="kota_asal"/></td>
+			</tr>
+			<tr>
+				<td>Kode Pos Asal </td>
+				<td><input type="text" name="kdpos_asal"/></td>
+			</tr>
+			<tr>
+				<td>Provinsi Asal </td>
+				<td><input type="text" name="prov_asal"/></td>
+			</tr>
+			<tr>
+				<td>Negara Asal ></td>
+				<td><input type="text" name="negara_asal"/</td>
+			</tr>
+			<tr>
+				<td>Alamat Sekarang </td>
+				<td><input type="text" name="almt_skrg"/></td>
+			</tr>
+			<tr>
+				<td>RT/RW Sekarang </td>
+				<td><input type="text" name="rt_skrg"> /  <input type="text" name="rw_skrg" /></td>
+			</tr>
+			<tr>
+				<td>Desa/Kelurahan Sekarang </td>
+				<td><input type="text" name="ds_skrg"/></td>
+			</tr>
+			<tr>
+				<td>Kecamatan Sekarang </td>
+				<td><input type="text" name="kcmtn_skrg"/></td>
+			</tr>
+			<tr>
+				<td>Kota Sekarang </td>
+				<td><input type="text" name="kota_skrg"/></td>
+			</tr>
+			<tr>
+				<td>Kode Sekarang </td>
+				<td><input type="text" name="kdpos_skrg"/></td>
+			</tr>
+			<tr>
+				<td>Provinsi Sekarang </td>
+				<td><input type="text" name="prov_skrg"/></td>
+			</tr>
+			<tr>
+				<td>Transfer</td>
+				<td><select name="transfer" >
+					 <option value="tidak"> Tidak</option>
+					 <option value="ya"> Ya</option>
+					 </select></td>
+			</tr>
+			<tr>
+				<td>Jenis Pendaftaran</td>
+				<td> <select name="jns_daftar" >
+					<option value=" "> - </option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Status </td>
+				<td><select name="sts" >
+					<option value="pilih "> Pilih </option>
+					</select></td>
+			</tr>
+				<td><input type="submit" value="Simpan"/></td>
+				<td><input type="reset" value="Batal"/></td>
+	
+		</table>
+		
+
+</form> 
+
+
+</body>
+</html>
